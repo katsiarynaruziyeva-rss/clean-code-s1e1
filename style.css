@@ -4,47 +4,59 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .matrix-scheme {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .matrix-scheme__image {
     width: 100%;
 }
+
 .matrix-scheme__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
 .matrix-scheme { text-align: center;
 }
+
 }
+
 .content {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .content__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
+
 .content__wrapper {
     display: flex;
 }
+
 .content__list {
     margin:0;
     padding: 0px;
 }
+
 .content__item, .content__tittle {
     list-style:none;
 }
+
 .content__item__name,
 .content__btn {
     outline:none;
 }
+
 .content__btn {
     background: none;
     border: 0px;
@@ -54,9 +66,11 @@ body {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .content__btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .content__tittle {
     color: #333;
@@ -67,6 +81,7 @@ body {
     margin: 0;
     text-transform: uppercase;
 }
+
 .content__item__input-name {
     margin: 0;
     font-size: 18px;
@@ -79,6 +94,7 @@ body {
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 .content__item__input-name:focus {
     color: #333;
 }
@@ -88,6 +104,7 @@ body {
     display: block;
     margin: 0 0 20px;
 }
+
 .content__task {
     width: 318px;
 }
@@ -102,6 +119,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .content__item {
     vertical-align: middle;
 }
@@ -109,26 +127,30 @@ body {
 .content__item__checkbox {
     margin: 0 10px;
 }
+
 .content__item__label-name {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
+
 .content__item__input-name {
     width: 226px
 }
+
 .delete-image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .delete-image:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-.complete-label {
+.completed-label {
     text-decoration: line-through
     color: #888;
 }
