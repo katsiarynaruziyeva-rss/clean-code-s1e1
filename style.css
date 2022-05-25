@@ -137,7 +137,7 @@ body {
 }
 
 .content__item__input-name {
-    width: 226px
+    width: 226px;
 }
 
 .delete-image {
@@ -152,20 +152,20 @@ body {
 
 /* Completed */
 .completed-label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .content__item__input-name {
-    display: none
+    display: none;
 }
 
 .editmode-input {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px;
 }
 
 .editmode-label {
-    display:none;
+    display: none;
 }
