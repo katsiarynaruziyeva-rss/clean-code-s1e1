@@ -49,7 +49,8 @@ body {
     padding: 0px;
 }
 
-.content__item, .content__tittle {
+.content__item,
+.content__tittle {
     list-style: none;
 }
 
