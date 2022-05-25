@@ -102,7 +102,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.content__item > * {
+.content__item {
     vertical-align: middle;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 /* Completed */
-.content__list#completed-tasks label {
+.completed-label {
     text-decoration: line-through
     color: #888;
 }
@@ -138,11 +138,11 @@ body {
     display:none
 }
 
-.content__list li.editmode input[type=text] {
+.editmode-input {
     display:inline-block;
     width:224px
 }
 
-.content__list li.editmode label {
+.editmode-label {
     display:none;
 }
