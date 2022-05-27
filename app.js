@@ -129,8 +129,16 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-task
     var listItem=this.parentNode;
     completedTask.appendChild(listItem);
+    // var label=document.querySelector("label");
+    completedTask.appendChild(listItem)?listItem.classList.add("completed"):null;
+    console.log(listItem.childNodes.length);
+    if(listItem.childNodes.length===11){
+        listItem.classList.contains("completed")?listItem.childNodes[3].classList.add("completed-label"):null;
+    }
+    if(listItem.childNodes.length===5){
+        listItem.classList.contains("completed")?listItem.childNodes[1].classList.add("completed-label"):null;
+    }
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
@@ -140,7 +148,16 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #todo-task.
     var listItem=this.parentNode;
-    todoTask.appendChild(listItem);
+    // todoTask.appendChild(listItem);
+    if(listItem.childNodes.length===11){
+        todoTask.appendChild(listItem)?listItem.classList.remove("completed"):null;
+        listItem.classList.contains("completed")?null:listItem.childNodes[3].classList.remove("completed-label");
+    }
+    if(listItem.childNodes.length===5){
+        todoTask.appendChild(listItem)?listItem.classList.remove("completed"):null;
+        listItem.classList.contains("completed")?null:listItem.childNodes[1].classList.remove("completed-label");
+    }
+    // todoTask.appendChild(listItem)?listItem.classList.remove("completed") && listItem.childNodes[3].classList.remove("completed-label"):null;
     bindTaskEvents(listItem,taskCompleted);
 }
 
